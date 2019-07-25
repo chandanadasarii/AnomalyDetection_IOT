@@ -1,0 +1,68 @@
+<html>
+<head>
+    <style>
+        body  {
+            background-image: url("./data/bg.jpg");
+            background-color: #cccccc;
+        }
+    </style>
+                
+    <script src='./index.js'></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/series-label.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+        #container {
+            min-width: 310px;
+            max-width: 800px;
+            height: 400px;
+            margin: 0 auto
+        }
+        .header{
+            display: flex;
+            justify-content: space-evenly;
+        }
+    </style>
+    
+</head>
+<body>
+    <div>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+            <a class="navbar-brand" href="#"> ANOMALY DETECTION  </a>
+            </div>
+        </div><!-- /.container-fluid -->
+    </nav>
+</div>
+<div class='container'></div>
+<div class='header'>
+    <div>
+            <select class="custom-select" onchange="dummy1(this)">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+    </div>
+    <div>
+            <select class="custom-select" id="drp-sensor" onchange="dummy2(this)">
+            </select>
+    </div>
+</div>
+<div id="container"></div>
+</div>
+        
+</body>
+</html>
